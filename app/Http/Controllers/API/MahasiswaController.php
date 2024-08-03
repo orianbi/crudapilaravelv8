@@ -143,7 +143,7 @@ class MahasiswaController extends Controller
     public function destroy($id)
     {
         $mahasiswa = Mahasiswa::Find($id);
-
+ 
         $data = $mahasiswa->delete();
 
         if ($data) {
